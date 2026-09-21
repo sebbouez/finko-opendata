@@ -1,0 +1,140 @@
+{
+  "services": [
+    {
+      "key": "es-amazon-prime-yearly",
+      "displayName": "Amazon Prime (anual)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachYear",
+      "url": "https://www.amazon.es/amazonprime"
+    },
+    {
+      "key": "es-amazon-prime-monthly",
+      "displayName": "Amazon Prime (mensual)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachMonth",
+      "url": "https://www.amazon.es/amazonprime"
+    },
+    {
+      "key": "es-dazn-yearly",
+      "displayName": "DAZN (anual)",
+      "thirdParty": "DAZN",
+      "label": "DAZN",
+      "frequency": "eachYear",
+      "url": "https://www.dazn.com/es-ES/"
+    },
+    {
+      "key": "es-dazn-monthly",
+      "displayName": "DAZN (mensual)",
+      "thirdParty": "DAZN",
+      "label": "DAZN",
+      "frequency": "eachMonth",
+      "url": "https://www.dazn.com/es-ES/"
+    },
+    {
+      "key": "es-disney-yearly",
+      "displayName": "Disney+ (anual)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachYear",
+      "url": "https://www.disneyplus.com/es-es"
+    },
+    {
+      "key": "es-disney-monthly",
+      "displayName": "Disney+ (mensual)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachMonth",
+      "url": "https://www.disneyplus.com/es-es"
+    },
+    {
+      "key": "es-filmin-yearly",
+      "displayName": "Filmin (anual)",
+      "thirdParty": "Filmin",
+      "label": "Filmin",
+      "frequency": "eachYear",
+      "url": "https://www.filmin.es/"
+    },
+    {
+      "key": "es-filmin-monthly",
+      "displayName": "Filmin (mensual)",
+      "thirdParty": "Filmin",
+      "label": "Filmin",
+      "frequency": "eachMonth",
+      "url": "https://www.filmin.es/"
+    },
+    {
+      "key": "es-icloud-monthly",
+      "displayName": "iCloud+ (mensual)",
+      "thirdParty": "Apple",
+      "label": "iCloud+",
+      "frequency": "eachMonth",
+      "url": "https://www.apple.com/es/icloud/"
+    },
+    {
+      "key": "es-microsoft-365-yearly",
+      "displayName": "Microsoft 365 (anual)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachYear",
+      "url": "https://www.microsoft.com/es-es/microsoft-365"
+    },
+    {
+      "key": "es-microsoft-365-monthly",
+      "displayName": "Microsoft 365 (mensual)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachMonth",
+      "url": "https://www.microsoft.com/es-es/microsoft-365"
+    },
+    {
+      "key": "es-movistar-plus-monthly",
+      "displayName": "Movistar Plus+ (mensual)",
+      "thirdParty": "Movistar",
+      "label": "Movistar Plus+",
+      "frequency": "eachMonth",
+      "url": "https://www.movistarplus.es/"
+    },
+    {
+      "key": "es-netflix-monthly",
+      "displayName": "Netflix (mensual)",
+      "thirdParty": "Netflix",
+      "label": "Netflix",
+      "frequency": "eachMonth",
+      "url": "https://www.netflix.com/"
+    },
+    {
+      "key": "es-orange-monthly",
+      "displayName": "Orange (mensual)",
+      "thirdParty": "Orange",
+      "label": "Orange",
+      "frequency": "eachMonth",
+      "url": "https://www.orange.es/"
+    },
+    {
+      "key": "es-spotify-premium-monthly",
+      "displayName": "Spotify Premium (mensual)",
+      "thirdParty": "Spotify",
+      "label": "Spotify Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.spotify.com/es/premium/"
+    },
+    {
+      "key": "es-vodafone-monthly",
+      "displayName": "Vodafone (mensual)",
+      "thirdParty": "Vodafone",
+      "label": "Vodafone",
+      "frequency": "eachMonth",
+      "url": "https://www.vodafone.es/"
+    },
+    {
+      "key": "es-youtube-premium-monthly",
+      "displayName": "YouTube Premium (mensual)",
+      "thirdParty": "Google",
+      "label": "YouTube Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.youtube.com/premium"
+    }
+  ]
+}

@@ -24,7 +24,19 @@ ROOT = Path(__file__).resolve().parents[2]
 INDEX_PATH = ROOT / "index.json"
 
 # Rubriques qu'un pays peut publier dans index.json
-ALLOWED_ITEMS = {"banks", "providers"}
+ALLOWED_ITEMS = {"banks", "providers", "services"}
+
+# Périodicités acceptées, alignées sur les modes de récurrence de Finko
+ALLOWED_FREQUENCIES = {
+    "eachWeek",
+    "eachMonth",
+    "eachTrimester",
+    "eachQuarter",
+    "eachHalfYear",
+    "eachYear",
+}
+
+SERVICE_KEY_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 COUNTRY_CODE_PATTERN = re.compile(r"^[a-z]{2}$")
 CONTROL_CHARS_PATTERN = re.compile(r"[\x00-\x1f\x7f]")
@@ -260,6 +272,80 @@ def validate_banks_file(path: Path, country_code: str) -> None:
                     seen_urls[normalized_url] = position
 
 
+def validate_services_file(path: Path, country_code: str) -> None:
+    """Vérifie le contenu d'un fichier services.json."""
+    label = rel(path)
+    data = load_json(path, label)
+    if data is None:
+        return
+
+    if not isinstance(data, dict):
+        error(f"{label}: root value must be an object")
+        return
+
+    services = data.get("services")
+    if services is None:
+        error(f"{label}: missing 'services' array")
+        return
+
+    if not isinstance(services, list):
+        error(f"{label}: 'services' must be an array")
+        return
+
+    if not services:
+        error(f"{label}: 'services' must not be empty (remove the file from index.json instead)")
+        return
+
+    unexpected_keys = set(data.keys()) - {"services"}
+    if unexpected_keys:
+        warn(f"{label}: unexpected top-level keys: {', '.join(sorted(unexpected_keys))}")
+
+    seen_keys: dict[str, int] = {}
+    seen_names: dict[str, int] = {}
+
+    for position, service in enumerate(services):
+        entry_label = f"{label}: services[{position}] ({country_code})"
+
+        if not isinstance(service, dict):
+            error(f"{entry_label}: entry must be an object")
+            continue
+
+        unexpected = set(service.keys()) - {"key", "displayName", "thirdParty", "label", "frequency", "url"}
+        if unexpected:
+            error(f"{entry_label}: unexpected keys: {', '.join(sorted(unexpected))}")
+
+        missing = [f for f in ("key", "displayName", "thirdParty", "label", "frequency") if f not in service]
+        if missing:
+            error(f"{entry_label}: missing required field(s): {', '.join(missing)}")
+            continue
+
+        # L'identifiant est conservé dans le fichier de l'utilisateur : il doit rester stable et unique
+        key = service["key"]
+        if not isinstance(key, str) or not SERVICE_KEY_PATTERN.match(key):
+            error(f"{entry_label}: 'key' must be lowercase alphanumeric words separated by hyphens (got {key!r})")
+        elif key in seen_keys:
+            error(f"{entry_label}: duplicate key {key!r}, already declared at services[{seen_keys[key]}]")
+        else:
+            seen_keys[key] = position
+
+        for field in ("displayName", "thirdParty", "label"):
+            check_display_name(service[field], f"{entry_label}: '{field}'")
+
+        frequency = service["frequency"]
+        if frequency not in ALLOWED_FREQUENCIES:
+            error(f"{entry_label}: 'frequency' must be one of {', '.join(sorted(ALLOWED_FREQUENCIES))} (got {frequency!r})")
+
+        if isinstance(service["displayName"], str):
+            normalized_name = service["displayName"].casefold()
+            if normalized_name in seen_names:
+                error(f"{entry_label}: duplicate service name, already declared at services[{seen_names[normalized_name]}]")
+            else:
+                seen_names[normalized_name] = position
+
+        if "url" in service:
+            check_url(service["url"], entry_label)
+
+
 def validate_index() -> set[Path]:
     """Valide index.json et retourne l'ensemble des fichiers qu'il référence."""
     referenced: set[Path] = set()
@@ -364,6 +450,8 @@ def validate_index() -> set[Path]:
 
                 if item_name == "banks":
                     validate_banks_file(resolved, code)
+                elif item_name == "services":
+                    validate_services_file(resolved, code)
 
     return referenced
 
