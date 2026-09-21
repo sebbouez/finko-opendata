@@ -1,7 +1,80 @@
-{"banks":[
 {
-"displayName":"BNP Paribas",
-"url":"https://mabanque.bnpparibas/"
-}
-]
+  "banks": [
+    {
+      "displayName": "Banque Populaire",
+      "url": "https://www.banquepopulaire.fr/"
+    },
+    {
+      "displayName": "BforBank",
+      "url": "https://www.bforbank.com/"
+    },
+    {
+      "displayName": "BNP Paribas",
+      "url": "https://mabanque.bnpparibas/"
+    },
+    {
+      "displayName": "BoursoBank",
+      "url": "https://www.boursobank.com/"
+    },
+    {
+      "displayName": "Caisse d'Épargne",
+      "url": "https://www.caisse-epargne.fr/"
+    },
+    {
+      "displayName": "CCF",
+      "url": "https://ccf.fr/"
+    },
+    {
+      "displayName": "CIC",
+      "url": "https://www.cic.fr/"
+    },
+    {
+      "displayName": "Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/"
+    },
+    {
+      "displayName": "Crédit Mutuel",
+      "url": "https://www.creditmutuel.fr/"
+    },
+    {
+      "displayName": "Fortuneo",
+      "url": "https://www.fortuneo.fr/"
+    },
+    {
+      "displayName": "Hello bank!",
+      "url": "https://www.hellobank.fr/"
+    },
+    {
+      "displayName": "La Banque Postale",
+      "url": "https://www.labanquepostale.fr/"
+    },
+    {
+      "displayName": "LCL",
+      "url": "https://www.lcl.fr/"
+    },
+    {
+      "displayName": "Monabanq",
+      "url": "https://www.monabanq.com/"
+    },
+    {
+      "displayName": "N26",
+      "url": "https://n26.com/"
+    },
+    {
+      "displayName": "Nickel",
+      "url": "https://nickel.eu/"
+    },
+    {
+      "displayName": "Qonto",
+      "url": "https://qonto.com/"
+    },
+    {
+      "displayName": "Revolut",
+      "url": "https://www.revolut.com/"
+    },
+    {
+      "displayName": "Société Générale",
+      "url": "https://particuliers.sg.fr/"
+    }
+  ]
 }

@@ -1,0 +1,80 @@
+{
+  "banks": [
+    {
+      "displayName": "Abanca",
+      "url": "https://www.abanca.com/"
+    },
+    {
+      "displayName": "Banca March",
+      "url": "https://www.bancamarch.es/"
+    },
+    {
+      "displayName": "Banco Sabadell",
+      "url": "https://www.bancsabadell.com/"
+    },
+    {
+      "displayName": "Banco Santander",
+      "url": "https://www.bancosantander.es/"
+    },
+    {
+      "displayName": "Bankinter",
+      "url": "https://www.bankinter.com/"
+    },
+    {
+      "displayName": "BBVA",
+      "url": "https://www.bbva.es/"
+    },
+    {
+      "displayName": "CaixaBank",
+      "url": "https://www.caixabank.es/"
+    },
+    {
+      "displayName": "Cajamar",
+      "url": "https://www.cajamar.es/"
+    },
+    {
+      "displayName": "Deutsche Bank España",
+      "url": "https://www.deutsche-bank.es/"
+    },
+    {
+      "displayName": "EVO Banco",
+      "url": "https://www.evobanco.com/"
+    },
+    {
+      "displayName": "Ibercaja",
+      "url": "https://www.ibercaja.es/"
+    },
+    {
+      "displayName": "imagin",
+      "url": "https://www.imagin.com/"
+    },
+    {
+      "displayName": "ING España",
+      "url": "https://www.ing.es/"
+    },
+    {
+      "displayName": "Kutxabank",
+      "url": "https://www.kutxabank.es/"
+    },
+    {
+      "displayName": "MyInvestor",
+      "url": "https://myinvestor.es/"
+    },
+    {
+      "displayName": "N26",
+      "url": "https://n26.com/"
+    },
+    {
+      "displayName": "Openbank",
+      "url": "https://www.openbank.es/"
+    },
+    {
+      "displayName": "Revolut",
+      "url": "https://www.revolut.com/"
+    },
+    {
+      "displayName": "Unicaja Banco",
+      "url": "https://www.unicajabanco.es/"
+    }
+  ]
+}
