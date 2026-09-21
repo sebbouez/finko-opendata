@@ -1,0 +1,8 @@
+{"countries":[
+{
+"code":"fr",
+"displayName":"France",
+"items":[{"banks":"fr/banks.json"}]
+}
+]
+}

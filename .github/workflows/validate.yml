@@ -1,0 +1,46 @@
+# Validation du catalogue de données ouvertes.
+#
+# Ce workflow est destiné à être déclaré comme « required status check » dans le
+# ruleset de la branche main : une pull request ne peut pas être fusionnée tant
+# qu'il échoue.
+#
+# Le déclencheur est volontairement « pull_request » et non « pull_request_target » :
+# le code d'une pull request issue d'un fork ne doit jamais s'exécuter avec un jeton
+# en écriture ni avec l'accès aux secrets du dépôt.
+
+name: Validate catalog
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Aucune écriture n'est nécessaire : le job se contente de lire et de valider.
+permissions:
+  contents: read
+
+# Une nouvelle version d'une pull request annule la validation encore en cours.
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate catalog files
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      # Action officielle GitHub. Pour toute action tierce ajoutée ici,
+      # épingler impérativement un SHA de commit complet plutôt qu'un tag.
+      - name: Check out the repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      # Python 3 est préinstallé sur les exécuteurs ubuntu-latest :
+      # aucune action supplémentaire ni dépendance externe n'est nécessaire.
+      - name: Validate catalog
+        run: python3 .github/scripts/validate_catalog.py
