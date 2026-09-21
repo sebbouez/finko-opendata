@@ -1,0 +1,176 @@
+{
+  "thirdParties": [
+    {
+      "displayName": "Agenzia delle Entrate",
+      "category": "Amministrazione"
+    },
+    {
+      "displayName": "INPS",
+      "category": "Amministrazione"
+    },
+    {
+      "displayName": "Allianz",
+      "category": "Assicurazioni"
+    },
+    {
+      "displayName": "Generali",
+      "category": "Assicurazioni"
+    },
+    {
+      "displayName": "UnipolSai",
+      "category": "Assicurazioni"
+    },
+    {
+      "displayName": "IKEA",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "Leroy Merlin",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "MediaWorld",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "Unieuro",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "AliExpress",
+      "category": "Commercio online"
+    },
+    {
+      "displayName": "Amazon",
+      "category": "Commercio online"
+    },
+    {
+      "displayName": "eBay",
+      "category": "Commercio online"
+    },
+    {
+      "displayName": "Subito",
+      "category": "Commercio online"
+    },
+    {
+      "displayName": "Vinted",
+      "category": "Commercio online"
+    },
+    {
+      "displayName": "Zalando",
+      "category": "Commercio online"
+    },
+    {
+      "displayName": "A2A",
+      "category": "Energia e acqua"
+    },
+    {
+      "displayName": "Enel",
+      "category": "Energia e acqua"
+    },
+    {
+      "displayName": "Eni Plenitude",
+      "category": "Energia e acqua"
+    },
+    {
+      "displayName": "Hera",
+      "category": "Energia e acqua"
+    },
+    {
+      "displayName": "Carrefour",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Conad",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Coop",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Esselunga",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Eurospin",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Lidl",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Penny Market",
+      "category": "Grande distribuzione"
+    },
+    {
+      "displayName": "Decathlon",
+      "category": "Moda e sport"
+    },
+    {
+      "displayName": "H&M",
+      "category": "Moda e sport"
+    },
+    {
+      "displayName": "OVS",
+      "category": "Moda e sport"
+    },
+    {
+      "displayName": "Zara",
+      "category": "Moda e sport"
+    },
+    {
+      "displayName": "Deliveroo",
+      "category": "Ristorazione"
+    },
+    {
+      "displayName": "Just Eat",
+      "category": "Ristorazione"
+    },
+    {
+      "displayName": "McDonald's",
+      "category": "Ristorazione"
+    },
+    {
+      "displayName": "Starbucks",
+      "category": "Ristorazione"
+    },
+    {
+      "displayName": "Fastweb",
+      "category": "Telecomunicazioni"
+    },
+    {
+      "displayName": "Iliad",
+      "category": "Telecomunicazioni"
+    },
+    {
+      "displayName": "TIM",
+      "category": "Telecomunicazioni"
+    },
+    {
+      "displayName": "Vodafone",
+      "category": "Telecomunicazioni"
+    },
+    {
+      "displayName": "WindTre",
+      "category": "Telecomunicazioni"
+    },
+    {
+      "displayName": "ATM",
+      "category": "Trasporti"
+    },
+    {
+      "displayName": "Italo",
+      "category": "Trasporti"
+    },
+    {
+      "displayName": "Trenitalia",
+      "category": "Trasporti"
+    },
+    {
+      "displayName": "Uber",
+      "category": "Trasporti"
+    }
+  ]
+}

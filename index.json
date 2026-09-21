@@ -9,6 +9,9 @@
         },
         {
           "services": "es/services.json"
+        },
+        {
+          "thirdparties": "es/thirdparties.json"
         }
       ]
     },
@@ -21,6 +24,9 @@
         },
         {
           "services": "fr/services.json"
+        },
+        {
+          "thirdparties": "fr/thirdparties.json"
         }
       ]
     },
@@ -33,6 +39,9 @@
         },
         {
           "services": "it/services.json"
+        },
+        {
+          "thirdparties": "it/thirdparties.json"
         }
       ]
     },
@@ -45,6 +54,9 @@
         },
         {
           "services": "pt/services.json"
+        },
+        {
+          "thirdparties": "pt/thirdparties.json"
         }
       ]
     }

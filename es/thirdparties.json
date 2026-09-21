@@ -1,0 +1,172 @@
+{
+  "thirdParties": [
+    {
+      "displayName": "Agencia Tributaria",
+      "category": "Administración"
+    },
+    {
+      "displayName": "Seguridad Social",
+      "category": "Administración"
+    },
+    {
+      "displayName": "AliExpress",
+      "category": "Comercio en línea"
+    },
+    {
+      "displayName": "Amazon",
+      "category": "Comercio en línea"
+    },
+    {
+      "displayName": "eBay",
+      "category": "Comercio en línea"
+    },
+    {
+      "displayName": "Vinted",
+      "category": "Comercio en línea"
+    },
+    {
+      "displayName": "Zalando",
+      "category": "Comercio en línea"
+    },
+    {
+      "displayName": "Alcampo",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "Carrefour",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "Consum",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "Dia",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "El Corte Inglés",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "Lidl",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "Mercadona",
+      "category": "Distribución"
+    },
+    {
+      "displayName": "Endesa",
+      "category": "Energía y agua"
+    },
+    {
+      "displayName": "Iberdrola",
+      "category": "Energía y agua"
+    },
+    {
+      "displayName": "Naturgy",
+      "category": "Energía y agua"
+    },
+    {
+      "displayName": "Repsol",
+      "category": "Energía y agua"
+    },
+    {
+      "displayName": "IKEA",
+      "category": "Hogar y bricolaje"
+    },
+    {
+      "displayName": "Leroy Merlin",
+      "category": "Hogar y bricolaje"
+    },
+    {
+      "displayName": "MediaMarkt",
+      "category": "Hogar y bricolaje"
+    },
+    {
+      "displayName": "Worten",
+      "category": "Hogar y bricolaje"
+    },
+    {
+      "displayName": "Decathlon",
+      "category": "Moda y deporte"
+    },
+    {
+      "displayName": "H&M",
+      "category": "Moda y deporte"
+    },
+    {
+      "displayName": "Primark",
+      "category": "Moda y deporte"
+    },
+    {
+      "displayName": "Zara",
+      "category": "Moda y deporte"
+    },
+    {
+      "displayName": "Glovo",
+      "category": "Restauración"
+    },
+    {
+      "displayName": "Just Eat",
+      "category": "Restauración"
+    },
+    {
+      "displayName": "McDonald's",
+      "category": "Restauración"
+    },
+    {
+      "displayName": "Starbucks",
+      "category": "Restauración"
+    },
+    {
+      "displayName": "Allianz",
+      "category": "Seguros"
+    },
+    {
+      "displayName": "Mapfre",
+      "category": "Seguros"
+    },
+    {
+      "displayName": "Mutua Madrileña",
+      "category": "Seguros"
+    },
+    {
+      "displayName": "MásMóvil",
+      "category": "Telecomunicaciones"
+    },
+    {
+      "displayName": "Movistar",
+      "category": "Telecomunicaciones"
+    },
+    {
+      "displayName": "Orange",
+      "category": "Telecomunicaciones"
+    },
+    {
+      "displayName": "Vodafone",
+      "category": "Telecomunicaciones"
+    },
+    {
+      "displayName": "Yoigo",
+      "category": "Telecomunicaciones"
+    },
+    {
+      "displayName": "ALSA",
+      "category": "Transporte"
+    },
+    {
+      "displayName": "Cabify",
+      "category": "Transporte"
+    },
+    {
+      "displayName": "Renfe",
+      "category": "Transporte"
+    },
+    {
+      "displayName": "Uber",
+      "category": "Transporte"
+    }
+  ]
+}
