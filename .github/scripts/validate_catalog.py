@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 INDEX_PATH = ROOT / "index.json"
 
 # Rubriques qu'un pays peut publier dans index.json
-ALLOWED_ITEMS = {"banks", "providers", "services"}
+ALLOWED_ITEMS = {"banks", "providers", "services", "thirdparties"}
 
 # Périodicités acceptées, alignées sur les modes de récurrence de Finko
 ALLOWED_FREQUENCIES = {
@@ -346,6 +346,65 @@ def validate_services_file(path: Path, country_code: str) -> None:
             check_url(service["url"], entry_label)
 
 
+def validate_thirdparties_file(path: Path, country_code: str) -> None:
+    """Vérifie le contenu d'un fichier thirdparties.json."""
+    label = rel(path)
+    data = load_json(path, label)
+    if data is None:
+        return
+
+    if not isinstance(data, dict):
+        error(f"{label}: root value must be an object")
+        return
+
+    third_parties = data.get("thirdParties")
+    if third_parties is None:
+        error(f"{label}: missing 'thirdParties' array")
+        return
+
+    if not isinstance(third_parties, list):
+        error(f"{label}: 'thirdParties' must be an array")
+        return
+
+    if not third_parties:
+        error(f"{label}: 'thirdParties' must not be empty (remove the file from index.json instead)")
+        return
+
+    unexpected_keys = set(data.keys()) - {"thirdParties"}
+    if unexpected_keys:
+        warn(f"{label}: unexpected top-level keys: {', '.join(sorted(unexpected_keys))}")
+
+    seen_names: dict[str, int] = {}
+
+    for position, third_party in enumerate(third_parties):
+        entry_label = f"{label}: thirdParties[{position}] ({country_code})"
+
+        if not isinstance(third_party, dict):
+            error(f"{entry_label}: entry must be an object")
+            continue
+
+        unexpected = set(third_party.keys()) - {"displayName", "category"}
+        if unexpected:
+            error(f"{entry_label}: unexpected keys: {', '.join(sorted(unexpected))}")
+
+        if "displayName" not in third_party:
+            error(f"{entry_label}: missing 'displayName'")
+            continue
+
+        if not check_display_name(third_party["displayName"], entry_label):
+            continue
+
+        if "category" in third_party:
+            check_display_name(third_party["category"], f"{entry_label}: 'category'")
+
+        name = third_party["displayName"]
+        normalized_name = name.casefold()
+        if normalized_name in seen_names:
+            error(f"{entry_label}: duplicate third party {name!r}, already declared at thirdParties[{seen_names[normalized_name]}]")
+        else:
+            seen_names[normalized_name] = position
+
+
 def validate_index() -> set[Path]:
     """Valide index.json et retourne l'ensemble des fichiers qu'il référence."""
     referenced: set[Path] = set()
@@ -452,6 +511,8 @@ def validate_index() -> set[Path]:
                     validate_banks_file(resolved, code)
                 elif item_name == "services":
                     validate_services_file(resolved, code)
+                elif item_name == "thirdparties":
+                    validate_thirdparties_file(resolved, code)
 
     return referenced
 

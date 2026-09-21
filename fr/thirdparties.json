@@ -1,0 +1,204 @@
+{
+  "thirdParties": [
+    {
+      "displayName": "CAF",
+      "category": "Administration"
+    },
+    {
+      "displayName": "Impôts",
+      "category": "Administration"
+    },
+    {
+      "displayName": "URSSAF",
+      "category": "Administration"
+    },
+    {
+      "displayName": "Allianz",
+      "category": "Assurance"
+    },
+    {
+      "displayName": "AXA",
+      "category": "Assurance"
+    },
+    {
+      "displayName": "Groupama",
+      "category": "Assurance"
+    },
+    {
+      "displayName": "MACIF",
+      "category": "Assurance"
+    },
+    {
+      "displayName": "MAIF",
+      "category": "Assurance"
+    },
+    {
+      "displayName": "AliExpress",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "Amazon",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "Cdiscount",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "eBay",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "Fnac",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "Veepee",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "Vinted",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "Zalando",
+      "category": "Commerce en ligne"
+    },
+    {
+      "displayName": "EDF",
+      "category": "Énergie et eau"
+    },
+    {
+      "displayName": "Engie",
+      "category": "Énergie et eau"
+    },
+    {
+      "displayName": "TotalEnergies",
+      "category": "Énergie et eau"
+    },
+    {
+      "displayName": "Veolia",
+      "category": "Énergie et eau"
+    },
+    {
+      "displayName": "Auchan",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Carrefour",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "E.Leclerc",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Franprix",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Intermarché",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Lidl",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Monoprix",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Super U",
+      "category": "Grande distribution"
+    },
+    {
+      "displayName": "Boulanger",
+      "category": "Maison et bricolage"
+    },
+    {
+      "displayName": "Castorama",
+      "category": "Maison et bricolage"
+    },
+    {
+      "displayName": "Conforama",
+      "category": "Maison et bricolage"
+    },
+    {
+      "displayName": "Darty",
+      "category": "Maison et bricolage"
+    },
+    {
+      "displayName": "IKEA",
+      "category": "Maison et bricolage"
+    },
+    {
+      "displayName": "Leroy Merlin",
+      "category": "Maison et bricolage"
+    },
+    {
+      "displayName": "Decathlon",
+      "category": "Mode et sport"
+    },
+    {
+      "displayName": "H&M",
+      "category": "Mode et sport"
+    },
+    {
+      "displayName": "Kiabi",
+      "category": "Mode et sport"
+    },
+    {
+      "displayName": "Zara",
+      "category": "Mode et sport"
+    },
+    {
+      "displayName": "Deliveroo",
+      "category": "Restauration"
+    },
+    {
+      "displayName": "McDonald's",
+      "category": "Restauration"
+    },
+    {
+      "displayName": "Starbucks",
+      "category": "Restauration"
+    },
+    {
+      "displayName": "Uber Eats",
+      "category": "Restauration"
+    },
+    {
+      "displayName": "Bouygues Telecom",
+      "category": "Télécom"
+    },
+    {
+      "displayName": "Free",
+      "category": "Télécom"
+    },
+    {
+      "displayName": "Orange",
+      "category": "Télécom"
+    },
+    {
+      "displayName": "SFR",
+      "category": "Télécom"
+    },
+    {
+      "displayName": "BlaBlaCar",
+      "category": "Transport"
+    },
+    {
+      "displayName": "RATP",
+      "category": "Transport"
+    },
+    {
+      "displayName": "SNCF Connect",
+      "category": "Transport"
+    },
+    {
+      "displayName": "Uber",
+      "category": "Transport"
+    }
+  ]
+}

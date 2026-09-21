@@ -37,6 +37,7 @@ index.json          list of covered countries
 <country>/          one folder per country, named after its ISO 3166-1 alpha-2 code
   banks.json        banks for that country
   services.json     subscription services for that country
+  thirdparties.json common payees for that country
 ```
 
 ### `index.json`
@@ -49,7 +50,8 @@ index.json          list of covered countries
       "displayName": "France",
       "items": [
         { "banks": "fr/banks.json" },
-        { "services": "fr/services.json" }
+        { "services": "fr/services.json" },
+        { "thirdparties": "fr/thirdparties.json" }
       ]
     }
   ]
@@ -61,7 +63,7 @@ index.json          list of covered countries
 - `displayName` — the country name as it should be shown.
 - `items` — the data files published for this country. Each entry maps an item name
   to a path inside the country folder. Supported item names: `banks`, `services`,
-  `providers`.
+  `thirdparties`, `providers`.
 
 ### `<country>/banks.json`
 
@@ -122,6 +124,29 @@ or promotional rates — a published price would be wrong for a large share of t
 detects the real amount from the user's own bank operations instead, and the `url` lets
 them check the current tariff themselves.
 
+### `<country>/thirdparties.json`
+
+Common payees, offered in bulk when a user sets up a new file.
+
+```json
+{
+  "thirdParties": [
+    {
+      "displayName": "Carrefour",
+      "category": "Grande distribution"
+    }
+  ]
+}
+```
+
+- `displayName` — the payee name as it will be created in the user's file. Unique within
+  the country.
+- `category` — optional, a grouping hint shown under the name and included in the search.
+  Write it in the language of the country.
+
+No URL here: a payee is a label in the user's account book, not a link. Keep the list to
+names a user would actually recognise on a bank statement.
+
 ## Rules enforced automatically
 
 The `Validate catalog` check runs on every pull request and must pass before a merge.
@@ -137,6 +162,7 @@ It fails when:
   `https://real-bank.example@attacker.example/` trick), points at a raw IP address,
   or contains whitespace;
 - a service `key` is malformed, or duplicated within the country;
+- a third party is missing its `displayName`, or duplicates another one in the country;
 - a service `frequency` is not one of the supported values;
 - an object contains a field that is not part of the format.
 
@@ -154,7 +180,8 @@ python3 .github/scripts/validate_catalog.py
 ## Adding a new country
 
 1. Create a folder named after the ISO 3166-1 alpha-2 code, in lowercase (`de`, `es`, `it`).
-2. Add `banks.json` and/or `services.json` inside it, following the formats above.
+2. Add `banks.json`, `services.json` and/or `thirdparties.json` inside it, following the
+   formats above.
 3. Register the country in `index.json`, keeping the list sorted by `displayName`.
 4. Run the validator, then open your pull request.
 
@@ -163,7 +190,8 @@ python3 .github/scripts/validate_catalog.py
 - UTF-8, no BOM.
 - Two-space indentation in JSON files.
 - Keep bank and service lists sorted alphabetically by `displayName` — it keeps diffs
-  readable and makes duplicates obvious during review.
+  readable and makes duplicates obvious during review. Third parties are sorted by
+  `category`, then by `displayName`.
 
 ## Reporting a problem
 

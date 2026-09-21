@@ -1,0 +1,160 @@
+{
+  "thirdParties": [
+    {
+      "displayName": "Autoridade Tributária",
+      "category": "Administração"
+    },
+    {
+      "displayName": "Segurança Social",
+      "category": "Administração"
+    },
+    {
+      "displayName": "IKEA",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "Leroy Merlin",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "Radio Popular",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "Worten",
+      "category": "Casa e bricolage"
+    },
+    {
+      "displayName": "AliExpress",
+      "category": "Comércio online"
+    },
+    {
+      "displayName": "Amazon",
+      "category": "Comércio online"
+    },
+    {
+      "displayName": "eBay",
+      "category": "Comércio online"
+    },
+    {
+      "displayName": "Vinted",
+      "category": "Comércio online"
+    },
+    {
+      "displayName": "Zalando",
+      "category": "Comércio online"
+    },
+    {
+      "displayName": "Auchan",
+      "category": "Distribuição"
+    },
+    {
+      "displayName": "Continente",
+      "category": "Distribuição"
+    },
+    {
+      "displayName": "Intermarché",
+      "category": "Distribuição"
+    },
+    {
+      "displayName": "Lidl",
+      "category": "Distribuição"
+    },
+    {
+      "displayName": "Minipreço",
+      "category": "Distribuição"
+    },
+    {
+      "displayName": "Pingo Doce",
+      "category": "Distribuição"
+    },
+    {
+      "displayName": "EDP",
+      "category": "Energia e água"
+    },
+    {
+      "displayName": "Endesa",
+      "category": "Energia e água"
+    },
+    {
+      "displayName": "Galp",
+      "category": "Energia e água"
+    },
+    {
+      "displayName": "Decathlon",
+      "category": "Moda e desporto"
+    },
+    {
+      "displayName": "H&M",
+      "category": "Moda e desporto"
+    },
+    {
+      "displayName": "Primark",
+      "category": "Moda e desporto"
+    },
+    {
+      "displayName": "Zara",
+      "category": "Moda e desporto"
+    },
+    {
+      "displayName": "Glovo",
+      "category": "Restauração"
+    },
+    {
+      "displayName": "McDonald's",
+      "category": "Restauração"
+    },
+    {
+      "displayName": "Starbucks",
+      "category": "Restauração"
+    },
+    {
+      "displayName": "Uber Eats",
+      "category": "Restauração"
+    },
+    {
+      "displayName": "Allianz",
+      "category": "Seguros"
+    },
+    {
+      "displayName": "Fidelidade",
+      "category": "Seguros"
+    },
+    {
+      "displayName": "Tranquilidade",
+      "category": "Seguros"
+    },
+    {
+      "displayName": "MEO",
+      "category": "Telecomunicações"
+    },
+    {
+      "displayName": "NOS",
+      "category": "Telecomunicações"
+    },
+    {
+      "displayName": "NOWO",
+      "category": "Telecomunicações"
+    },
+    {
+      "displayName": "Vodafone",
+      "category": "Telecomunicações"
+    },
+    {
+      "displayName": "Bolt",
+      "category": "Transportes"
+    },
+    {
+      "displayName": "Carris",
+      "category": "Transportes"
+    },
+    {
+      "displayName": "CP",
+      "category": "Transportes"
+    },
+    {
+      "displayName": "Uber",
+      "category": "Transportes"
+    }
+  ]
+}
