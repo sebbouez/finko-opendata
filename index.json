@@ -1,8 +1,40 @@
-{"countries":[
 {
-"code":"fr",
-"displayName":"France",
-"items":[{"banks":"fr/banks.json"}]
-}
-]
+  "countries": [
+    {
+      "code": "es",
+      "displayName": "España",
+      "items": [
+        {
+          "banks": "es/banks.json"
+        }
+      ]
+    },
+    {
+      "code": "fr",
+      "displayName": "France",
+      "items": [
+        {
+          "banks": "fr/banks.json"
+        }
+      ]
+    },
+    {
+      "code": "it",
+      "displayName": "Italia",
+      "items": [
+        {
+          "banks": "it/banks.json"
+        }
+      ]
+    },
+    {
+      "code": "pt",
+      "displayName": "Portugal",
+      "items": [
+        {
+          "banks": "pt/banks.json"
+        }
+      ]
+    }
+  ]
 }

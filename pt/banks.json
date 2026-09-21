@@ -1,0 +1,64 @@
+{
+  "banks": [
+    {
+      "displayName": "ABANCA Portugal",
+      "url": "https://www.abanca.pt/"
+    },
+    {
+      "displayName": "ActivoBank",
+      "url": "https://www.activobank.pt/"
+    },
+    {
+      "displayName": "Banco Best",
+      "url": "https://www.bancobest.pt/"
+    },
+    {
+      "displayName": "Banco BIG",
+      "url": "https://www.big.pt/"
+    },
+    {
+      "displayName": "Banco BPI",
+      "url": "https://www.bancobpi.pt/"
+    },
+    {
+      "displayName": "Banco CTT",
+      "url": "https://www.bancoctt.pt/"
+    },
+    {
+      "displayName": "Banco Montepio",
+      "url": "https://www.bancomontepio.pt/"
+    },
+    {
+      "displayName": "Banco Santander Totta",
+      "url": "https://www.santander.pt/"
+    },
+    {
+      "displayName": "Bankinter Portugal",
+      "url": "https://www.bankinter.pt/"
+    },
+    {
+      "displayName": "Caixa Geral de Depósitos",
+      "url": "https://www.cgd.pt/"
+    },
+    {
+      "displayName": "Crédito Agrícola",
+      "url": "https://www.creditoagricola.pt/"
+    },
+    {
+      "displayName": "Millennium bcp",
+      "url": "https://www.millenniumbcp.pt/"
+    },
+    {
+      "displayName": "N26",
+      "url": "https://n26.com/"
+    },
+    {
+      "displayName": "Novo Banco",
+      "url": "https://www.novobanco.pt/"
+    },
+    {
+      "displayName": "Revolut",
+      "url": "https://www.revolut.com/"
+    }
+  ]
+}

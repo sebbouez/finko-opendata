@@ -1,0 +1,76 @@
+{
+  "banks": [
+    {
+      "displayName": "Banca Mediolanum",
+      "url": "https://www.bancamediolanum.it/"
+    },
+    {
+      "displayName": "Banca Monte dei Paschi di Siena",
+      "url": "https://www.mps.it/"
+    },
+    {
+      "displayName": "Banca Sella",
+      "url": "https://www.sella.it/"
+    },
+    {
+      "displayName": "Banca Widiba",
+      "url": "https://www.widiba.it/"
+    },
+    {
+      "displayName": "Banco BPM",
+      "url": "https://www.bancobpm.it/"
+    },
+    {
+      "displayName": "BancoPosta",
+      "url": "https://www.poste.it/"
+    },
+    {
+      "displayName": "BPER Banca",
+      "url": "https://www.bper.it/"
+    },
+    {
+      "displayName": "Credem",
+      "url": "https://www.credem.it/"
+    },
+    {
+      "displayName": "Crédit Agricole Italia",
+      "url": "https://www.credit-agricole.it/"
+    },
+    {
+      "displayName": "FinecoBank",
+      "url": "https://finecobank.com/"
+    },
+    {
+      "displayName": "illimity",
+      "url": "https://www.illimity.com/"
+    },
+    {
+      "displayName": "ING Italia",
+      "url": "https://www.ing.it/"
+    },
+    {
+      "displayName": "Intesa Sanpaolo",
+      "url": "https://www.intesasanpaolo.com/"
+    },
+    {
+      "displayName": "Mediobanca",
+      "url": "https://www.mediobanca.com/"
+    },
+    {
+      "displayName": "Mediobanca Premier",
+      "url": "https://www.mediobancapremier.com/"
+    },
+    {
+      "displayName": "N26",
+      "url": "https://n26.com/"
+    },
+    {
+      "displayName": "Revolut",
+      "url": "https://www.revolut.com/"
+    },
+    {
+      "displayName": "UniCredit",
+      "url": "https://www.unicredit.it/"
+    }
+  ]
+}
