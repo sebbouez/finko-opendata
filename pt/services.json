@@ -1,0 +1,116 @@
+{
+  "services": [
+    {
+      "key": "pt-dazn-yearly",
+      "displayName": "DAZN (anual)",
+      "thirdParty": "DAZN",
+      "label": "DAZN",
+      "frequency": "eachYear",
+      "url": "https://www.dazn.com/pt-PT/"
+    },
+    {
+      "key": "pt-dazn-monthly",
+      "displayName": "DAZN (mensal)",
+      "thirdParty": "DAZN",
+      "label": "DAZN",
+      "frequency": "eachMonth",
+      "url": "https://www.dazn.com/pt-PT/"
+    },
+    {
+      "key": "pt-disney-yearly",
+      "displayName": "Disney+ (anual)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachYear",
+      "url": "https://www.disneyplus.com/pt-pt"
+    },
+    {
+      "key": "pt-disney-monthly",
+      "displayName": "Disney+ (mensal)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachMonth",
+      "url": "https://www.disneyplus.com/pt-pt"
+    },
+    {
+      "key": "pt-icloud-monthly",
+      "displayName": "iCloud+ (mensal)",
+      "thirdParty": "Apple",
+      "label": "iCloud+",
+      "frequency": "eachMonth",
+      "url": "https://www.apple.com/pt/icloud/"
+    },
+    {
+      "key": "pt-meo-monthly",
+      "displayName": "MEO (mensal)",
+      "thirdParty": "MEO",
+      "label": "MEO",
+      "frequency": "eachMonth",
+      "url": "https://www.meo.pt/"
+    },
+    {
+      "key": "pt-microsoft-365-yearly",
+      "displayName": "Microsoft 365 (anual)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachYear",
+      "url": "https://www.microsoft.com/pt-pt/microsoft-365"
+    },
+    {
+      "key": "pt-microsoft-365-monthly",
+      "displayName": "Microsoft 365 (mensal)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachMonth",
+      "url": "https://www.microsoft.com/pt-pt/microsoft-365"
+    },
+    {
+      "key": "pt-netflix-monthly",
+      "displayName": "Netflix (mensal)",
+      "thirdParty": "Netflix",
+      "label": "Netflix",
+      "frequency": "eachMonth",
+      "url": "https://www.netflix.com/"
+    },
+    {
+      "key": "pt-nos-monthly",
+      "displayName": "NOS (mensal)",
+      "thirdParty": "NOS",
+      "label": "NOS",
+      "frequency": "eachMonth",
+      "url": "https://www.nos.pt/"
+    },
+    {
+      "key": "pt-sport-tv-monthly",
+      "displayName": "Sport TV (mensal)",
+      "thirdParty": "Sport TV",
+      "label": "Sport TV",
+      "frequency": "eachMonth",
+      "url": "https://www.sporttv.pt/"
+    },
+    {
+      "key": "pt-spotify-premium-monthly",
+      "displayName": "Spotify Premium (mensal)",
+      "thirdParty": "Spotify",
+      "label": "Spotify Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.spotify.com/pt-pt/premium/"
+    },
+    {
+      "key": "pt-vodafone-monthly",
+      "displayName": "Vodafone (mensal)",
+      "thirdParty": "Vodafone",
+      "label": "Vodafone",
+      "frequency": "eachMonth",
+      "url": "https://www.vodafone.pt/"
+    },
+    {
+      "key": "pt-youtube-premium-monthly",
+      "displayName": "YouTube Premium (mensal)",
+      "thirdParty": "Google",
+      "label": "YouTube Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.youtube.com/premium"
+    }
+  ]
+}

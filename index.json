@@ -6,6 +6,9 @@
       "items": [
         {
           "banks": "es/banks.json"
+        },
+        {
+          "services": "es/services.json"
         }
       ]
     },
@@ -15,6 +18,9 @@
       "items": [
         {
           "banks": "fr/banks.json"
+        },
+        {
+          "services": "fr/services.json"
         }
       ]
     },
@@ -24,6 +30,9 @@
       "items": [
         {
           "banks": "it/banks.json"
+        },
+        {
+          "services": "it/services.json"
         }
       ]
     },
@@ -33,6 +42,9 @@
       "items": [
         {
           "banks": "pt/banks.json"
+        },
+        {
+          "services": "pt/services.json"
         }
       ]
     }

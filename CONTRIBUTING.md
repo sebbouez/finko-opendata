@@ -36,6 +36,7 @@ continues. When in doubt about whether an institution qualifies, open an issue f
 index.json          list of covered countries
 <country>/          one folder per country, named after its ISO 3166-1 alpha-2 code
   banks.json        banks for that country
+  services.json     subscription services for that country
 ```
 
 ### `index.json`
@@ -46,7 +47,10 @@ index.json          list of covered countries
     {
       "code": "fr",
       "displayName": "France",
-      "items": [{ "banks": "fr/banks.json" }]
+      "items": [
+        { "banks": "fr/banks.json" },
+        { "services": "fr/services.json" }
+      ]
     }
   ]
 }
@@ -56,7 +60,8 @@ index.json          list of covered countries
   folder name.
 - `displayName` — the country name as it should be shown.
 - `items` — the data files published for this country. Each entry maps an item name
-  to a path inside the country folder. Supported item names: `banks`, `providers`.
+  to a path inside the country folder. Supported item names: `banks`, `services`,
+  `providers`.
 
 ### `<country>/banks.json`
 
@@ -79,6 +84,44 @@ index.json          list of covered countries
 No other fields are accepted. The validator rejects unknown keys on purpose, so that
 a typo never ships silently.
 
+### `<country>/services.json`
+
+Subscription services, used by Finko to pre-fill a recurring operation.
+
+```json
+{
+  "services": [
+    {
+      "key": "fr-amazon-prime-monthly",
+      "displayName": "Amazon Prime (mensuel)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachMonth",
+      "url": "https://www.amazon.fr/amazonprime"
+    }
+  ]
+}
+```
+
+- `key` — stable identifier, lowercase words separated by hyphens, unique within the
+  country. Finko stores it in the user's file, so **never change or reuse a key**: rename
+  the `displayName` instead.
+- `displayName` — how the entry appears in the catalog. When a service is offered with
+  several billing periods, add the period so entries stay distinguishable, in the language
+  of the country.
+- `thirdParty` — who gets paid, for example `Amazon`. Finko selects or creates a matching
+  third party.
+- `label` — the suggested label for the operation itself, for example `Amazon Prime`.
+- `frequency` — one of `eachWeek`, `eachMonth`, `eachTrimester` (3 months),
+  `eachQuarter` (4 months), `eachHalfYear`, `eachYear`.
+- `url` — optional, the official public page of the service.
+
+**This file carries no price, and the validator rejects any attempt to add one.** Tariffs
+change several times a year, vary by plan and country, and many users are on grandfathered
+or promotional rates — a published price would be wrong for a large share of them. Finko
+detects the real amount from the user's own bank operations instead, and the `url` lets
+them check the current tariff themselves.
+
 ## Rules enforced automatically
 
 The `Validate catalog` check runs on every pull request and must pass before a merge.
@@ -93,6 +136,8 @@ It fails when:
 - a `url` is not HTTPS, carries credentials in the host part (the
   `https://real-bank.example@attacker.example/` trick), points at a raw IP address,
   or contains whitespace;
+- a service `key` is malformed, or duplicated within the country;
+- a service `frequency` is not one of the supported values;
 - an object contains a field that is not part of the format.
 
 It warns, without failing, when a data file is not referenced by `index.json`, or
@@ -109,7 +154,7 @@ python3 .github/scripts/validate_catalog.py
 ## Adding a new country
 
 1. Create a folder named after the ISO 3166-1 alpha-2 code, in lowercase (`de`, `es`, `it`).
-2. Add `banks.json` inside it, following the format above.
+2. Add `banks.json` and/or `services.json` inside it, following the formats above.
 3. Register the country in `index.json`, keeping the list sorted by `displayName`.
 4. Run the validator, then open your pull request.
 
@@ -117,8 +162,8 @@ python3 .github/scripts/validate_catalog.py
 
 - UTF-8, no BOM.
 - Two-space indentation in JSON files.
-- Keep bank lists sorted alphabetically by `displayName` — it keeps diffs readable
-  and makes duplicates obvious during review.
+- Keep bank and service lists sorted alphabetically by `displayName` — it keeps diffs
+  readable and makes duplicates obvious during review.
 
 ## Reporting a problem
 

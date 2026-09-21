@@ -1,0 +1,140 @@
+{
+  "services": [
+    {
+      "key": "it-amazon-prime-yearly",
+      "displayName": "Amazon Prime (annuale)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachYear",
+      "url": "https://www.amazon.it/amazonprime"
+    },
+    {
+      "key": "it-amazon-prime-monthly",
+      "displayName": "Amazon Prime (mensile)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachMonth",
+      "url": "https://www.amazon.it/amazonprime"
+    },
+    {
+      "key": "it-dazn-yearly",
+      "displayName": "DAZN (annuale)",
+      "thirdParty": "DAZN",
+      "label": "DAZN",
+      "frequency": "eachYear",
+      "url": "https://www.dazn.com/it-IT/"
+    },
+    {
+      "key": "it-dazn-monthly",
+      "displayName": "DAZN (mensile)",
+      "thirdParty": "DAZN",
+      "label": "DAZN",
+      "frequency": "eachMonth",
+      "url": "https://www.dazn.com/it-IT/"
+    },
+    {
+      "key": "it-disney-yearly",
+      "displayName": "Disney+ (annuale)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachYear",
+      "url": "https://www.disneyplus.com/it-it"
+    },
+    {
+      "key": "it-disney-monthly",
+      "displayName": "Disney+ (mensile)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachMonth",
+      "url": "https://www.disneyplus.com/it-it"
+    },
+    {
+      "key": "it-icloud-monthly",
+      "displayName": "iCloud+ (mensile)",
+      "thirdParty": "Apple",
+      "label": "iCloud+",
+      "frequency": "eachMonth",
+      "url": "https://www.apple.com/it/icloud/"
+    },
+    {
+      "key": "it-microsoft-365-yearly",
+      "displayName": "Microsoft 365 (annuale)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachYear",
+      "url": "https://www.microsoft.com/it-it/microsoft-365"
+    },
+    {
+      "key": "it-microsoft-365-monthly",
+      "displayName": "Microsoft 365 (mensile)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachMonth",
+      "url": "https://www.microsoft.com/it-it/microsoft-365"
+    },
+    {
+      "key": "it-netflix-monthly",
+      "displayName": "Netflix (mensile)",
+      "thirdParty": "Netflix",
+      "label": "Netflix",
+      "frequency": "eachMonth",
+      "url": "https://www.netflix.com/"
+    },
+    {
+      "key": "it-now-monthly",
+      "displayName": "NOW (mensile)",
+      "thirdParty": "Sky",
+      "label": "NOW",
+      "frequency": "eachMonth",
+      "url": "https://www.nowtv.it/"
+    },
+    {
+      "key": "it-sky-monthly",
+      "displayName": "Sky (mensile)",
+      "thirdParty": "Sky",
+      "label": "Sky",
+      "frequency": "eachMonth",
+      "url": "https://www.sky.it/"
+    },
+    {
+      "key": "it-spotify-premium-monthly",
+      "displayName": "Spotify Premium (mensile)",
+      "thirdParty": "Spotify",
+      "label": "Spotify Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.spotify.com/it/premium/"
+    },
+    {
+      "key": "it-tim-monthly",
+      "displayName": "TIM (mensile)",
+      "thirdParty": "TIM",
+      "label": "TIM",
+      "frequency": "eachMonth",
+      "url": "https://www.tim.it/"
+    },
+    {
+      "key": "it-vodafone-monthly",
+      "displayName": "Vodafone (mensile)",
+      "thirdParty": "Vodafone",
+      "label": "Vodafone",
+      "frequency": "eachMonth",
+      "url": "https://www.vodafone.it/"
+    },
+    {
+      "key": "it-windtre-monthly",
+      "displayName": "WindTre (mensile)",
+      "thirdParty": "WindTre",
+      "label": "WindTre",
+      "frequency": "eachMonth",
+      "url": "https://www.windtre.it/"
+    },
+    {
+      "key": "it-youtube-premium-monthly",
+      "displayName": "YouTube Premium (mensile)",
+      "thirdParty": "Google",
+      "label": "YouTube Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.youtube.com/premium"
+    }
+  ]
+}

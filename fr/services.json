@@ -1,0 +1,140 @@
+{
+  "services": [
+    {
+      "key": "fr-amazon-prime-yearly",
+      "displayName": "Amazon Prime (annuel)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachYear",
+      "url": "https://www.amazon.fr/amazonprime"
+    },
+    {
+      "key": "fr-amazon-prime-monthly",
+      "displayName": "Amazon Prime (mensuel)",
+      "thirdParty": "Amazon",
+      "label": "Amazon Prime",
+      "frequency": "eachMonth",
+      "url": "https://www.amazon.fr/amazonprime"
+    },
+    {
+      "key": "fr-bouygues-telecom-monthly",
+      "displayName": "Bouygues Telecom (mensuel)",
+      "thirdParty": "Bouygues Telecom",
+      "label": "Bouygues Telecom",
+      "frequency": "eachMonth",
+      "url": "https://www.bouyguestelecom.fr/"
+    },
+    {
+      "key": "fr-canal-monthly",
+      "displayName": "Canal+ (mensuel)",
+      "thirdParty": "Canal+",
+      "label": "Canal+",
+      "frequency": "eachMonth",
+      "url": "https://www.canalplus.com/"
+    },
+    {
+      "key": "fr-deezer-monthly",
+      "displayName": "Deezer (mensuel)",
+      "thirdParty": "Deezer",
+      "label": "Deezer",
+      "frequency": "eachMonth",
+      "url": "https://www.deezer.com/fr/"
+    },
+    {
+      "key": "fr-disney-yearly",
+      "displayName": "Disney+ (annuel)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachYear",
+      "url": "https://www.disneyplus.com/fr-fr"
+    },
+    {
+      "key": "fr-disney-monthly",
+      "displayName": "Disney+ (mensuel)",
+      "thirdParty": "Disney",
+      "label": "Disney+",
+      "frequency": "eachMonth",
+      "url": "https://www.disneyplus.com/fr-fr"
+    },
+    {
+      "key": "fr-free-monthly",
+      "displayName": "Free (mensuel)",
+      "thirdParty": "Free",
+      "label": "Free",
+      "frequency": "eachMonth",
+      "url": "https://www.free.fr/"
+    },
+    {
+      "key": "fr-icloud-monthly",
+      "displayName": "iCloud+ (mensuel)",
+      "thirdParty": "Apple",
+      "label": "iCloud+",
+      "frequency": "eachMonth",
+      "url": "https://www.apple.com/fr/icloud/"
+    },
+    {
+      "key": "fr-microsoft-365-yearly",
+      "displayName": "Microsoft 365 (annuel)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachYear",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365"
+    },
+    {
+      "key": "fr-microsoft-365-monthly",
+      "displayName": "Microsoft 365 (mensuel)",
+      "thirdParty": "Microsoft",
+      "label": "Microsoft 365",
+      "frequency": "eachMonth",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365"
+    },
+    {
+      "key": "fr-molotov-monthly",
+      "displayName": "Molotov (mensuel)",
+      "thirdParty": "Molotov",
+      "label": "Molotov",
+      "frequency": "eachMonth",
+      "url": "https://www.molotov.tv/"
+    },
+    {
+      "key": "fr-netflix-monthly",
+      "displayName": "Netflix (mensuel)",
+      "thirdParty": "Netflix",
+      "label": "Netflix",
+      "frequency": "eachMonth",
+      "url": "https://www.netflix.com/"
+    },
+    {
+      "key": "fr-orange-monthly",
+      "displayName": "Orange (mensuel)",
+      "thirdParty": "Orange",
+      "label": "Orange",
+      "frequency": "eachMonth",
+      "url": "https://www.orange.fr/"
+    },
+    {
+      "key": "fr-sfr-monthly",
+      "displayName": "SFR (mensuel)",
+      "thirdParty": "SFR",
+      "label": "SFR",
+      "frequency": "eachMonth",
+      "url": "https://www.sfr.fr/"
+    },
+    {
+      "key": "fr-spotify-premium-monthly",
+      "displayName": "Spotify Premium (mensuel)",
+      "thirdParty": "Spotify",
+      "label": "Spotify Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.spotify.com/fr/premium/"
+    },
+    {
+      "key": "fr-youtube-premium-monthly",
+      "displayName": "YouTube Premium (mensuel)",
+      "thirdParty": "Google",
+      "label": "YouTube Premium",
+      "frequency": "eachMonth",
+      "url": "https://www.youtube.com/premium"
+    }
+  ]
+}
